@@ -9,6 +9,7 @@ def setup_admin(app):
     admin = Admin(app, name='4Geeks Admin', template_mode='bootstrap3')
     
     # Add your models here, for example this is how we add a the User model to the admin
+    
     admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(Planets, db.session))
     admin.add_view(ModelView(People, db.session))

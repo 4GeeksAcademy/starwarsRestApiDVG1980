@@ -15,7 +15,7 @@ from routes import user_bp, people_bp, planets_bp, favorites_bp
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 
-#api-key, credenciales
+#api-key, credentials
 
 db_url = os.getenv("DATABASE_URL")
 if db_url is not None:
